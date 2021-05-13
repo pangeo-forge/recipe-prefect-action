@@ -20,21 +20,13 @@ N/A
 ## Example usage
 
 ```yaml
-# If using this recipe within the pangeo-forge/staged-recipes repository
-uses: ./.github/actions/process_recipe
-with:
-    path_to_meta_yaml: "recipes/my_recipe/meta.yaml"
-    path_to_bakeries_yaml: "bakeries.yaml"
-env:
-    SECRETS_CONTEXT: ${{ toJson(secrets) }}
-    PREFECT__CLOUD__AUTH_TOKEN: ${{ secrets.PREFECT__CLOUD__AUTH_TOKEN }}
 
-# If using this recipe in any other repository
-uses: pangeo-forge/staged-recipes/.github/actions/process_recipe@master
+uses: pangeo-forge/recipe-prefect-action@release
 with:
     path_to_meta_yaml: "recipes/my_recipe/meta.yaml"
     path_to_bakeries_yaml: "bakeries.yaml"
 env:
     SECRETS_CONTEXT: ${{ toJson(secrets) }}
     PREFECT__CLOUD__AUTH_TOKEN: ${{ secrets.PREFECT__CLOUD__AUTH_TOKEN }}
+    PREFECT_PROJECT_NAME: ${{ secrets.PREFECT_PROJECT_NAME }}
 ```
