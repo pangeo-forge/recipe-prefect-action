@@ -6,6 +6,7 @@ from pangeo_forge_prefect.flow_manager import register_flow
 from pangeo_forge_prefect.meta_types.versions import Versions
 
 def main():
+    print(xarray.__version__)
     secrets = json.loads(os.environ["SECRETS_CONTEXT"])
     print(secrets)
     meta_yaml = os.environ["INPUT_PATH_TO_META_YAML"]
