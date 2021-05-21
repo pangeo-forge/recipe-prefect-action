@@ -4,7 +4,8 @@ COPY ./requirements.txt requirements.txt
 
 
 RUN conda run -n notebook pip uninstall -y -r requirements.txt
-RUN conda run -n notebook pip install -I -r requirements.txt
+RUN conda run -n notebook pip install -I -r requirements.txt --no-deps
+RUN conda run -n notebook pip install xarray==0.18.0 --no-deps
 RUN conda run -n notebook pip install git+https://github.com/pangeo-forge/pangeo-forge-prefect@0.2 --no-deps
 RUN conda run -n notebook pip install pyyaml==5.4.1
 RUN conda run -n notebook pip install dacite==1.6.0
