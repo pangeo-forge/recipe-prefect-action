@@ -4,13 +4,13 @@ This actions purpose is to take a Recipe contributed via a PR, convert it to a P
 
 ## Inputs
 
-### `path_to_recipe_py`
-
-**Required** The path to the `recipe.py` file within the PR. This is relative to the root of the repository.
-
 ### `path_to_meta_yaml`
 
 **Required** The path to the `meta.yaml` file within the PR. This is relative to the root of the repository.
+
+### `path_to_bakeries_yaml`
+
+**Required** The path to the `bakeries.yaml` file within the PR. This is relative to the root of the repository and should be the result of a checkout of the most recent tag of the bakeries-database.
 
 
 ## Outputs
