@@ -13,6 +13,10 @@ This actions purpose is to take a Recipe contributed via a PR, convert it to a P
 **Required** The path to the `bakeries.yaml` file within the PR. This is relative to the root of the repository and should be the result of a checkout of the most recent tag of the bakeries-database.
 
 
+### `prune`
+
+**Optional** If the recipe should be registered using a pruned set of dimensions for testing.
+
 ## Outputs
 
 N/A
