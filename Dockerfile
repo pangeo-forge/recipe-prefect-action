@@ -1,6 +1,6 @@
 FROM pangeo/pangeo-forge-bakery-images:pangeonotebook-2021.06.05_prefect-0.14.22_pangeoforgerecipes-0.4.0
 
-RUN conda run -n notebook pip install git+https://github.com/pangeo-forge/pangeo-forge-prefect@0.2 --no-deps
+RUN conda run -n notebook pip install git+https://github.com/pangeo-forge/pangeo-forge-prefect@0.3 --no-deps
 RUN conda run -n notebook pip install pyyaml==5.4.1
 RUN conda run -n notebook pip install dacite==1.6.0
 

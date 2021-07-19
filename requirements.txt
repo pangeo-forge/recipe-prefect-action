@@ -1,3 +1,0 @@
-pangeo-forge-recipes==0.3.3
-prefect[aws, azure, google, kubernetes]==0.14.7
-dask-cloudprovider[aws]==2021.3.1
