@@ -14,6 +14,8 @@ def getenv(key, default):
     elif type(value) == str:
         if len(value) == 0:
             value = default
+        if value == "true":
+            value = True
     return value
 
 
